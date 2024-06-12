@@ -1,16 +1,16 @@
-// App.js
-import React from 'react';
 import { ModalProvider } from './modal-context';
-import BotonAbrirModal from './BotonAbrirModal';
-import ContenidoModal from './ContenidoModal';
+import ButtonOpenModal from './ButtonOpenModal';
+import ContentModal from './ContentModal';
 
 function App() {
   return (
     <ModalProvider>
       <div className="App">
-        <h1>Aplicación con Modal</h1>
-        <BotonAbrirModal />
-        <ContenidoModal />
+        <center>
+          <h1>App with modal </h1>
+          <ButtonOpenModal />
+          <ContentModal />
+        </center>
       </div>
     </ModalProvider>
   );

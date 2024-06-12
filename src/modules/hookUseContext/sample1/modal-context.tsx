@@ -1,6 +1,5 @@
 
-// modal-context.js
-import React, { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 const ModalContext = createContext({
   isModalOpen: false,
@@ -13,12 +12,12 @@ export function ModalProvider({ children }:any) {
 
   const openModal = () => {
     setIsModalOpen(true);
-    console.log('ABIERTO');
+    console.log('OPEN');
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
-    console.log('CERRADO');
+    console.log('CLOSE');
   };
 
   return (
